@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icons/cv.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Granite Marble</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar">
+              <img src="images/lewis.jpg" alt="lewis" width="57" height="57" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">
+                Василь <br />
+                Настишин
+              </div>
+              <div class="user__prof">Мармур &amp; Граніт</div>
+            </div>
+          </div>
+          <!--user-->
+
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#works">РОБОТИ</a>
+            <a class="nav__link" href="#aboutme">ПРО МЕНЕ</a>
+            <a class="nav__link" href="#news">БЛОГ</a>
+            <a class="nav__link" href="#intro">КОНТАКТИ</a>
+            <a class="nav__link nav__link--btn" href="tel:+380979482684"
+              >Подзвонити</a
+            >
+          </nav>
+
+          <button class="burger" type="button" id="navToggle">
+            <img class="burger__icon" src="images/icons/menu.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- intro -->
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Привіт, Я</h2>
+            <h1 class="intro__title">Василь Настишин</h1>
+            <div class="intro__text">ФАХІВЕЦЬ КАМЕНЮ</div>
+
+            <div class="social">
+
+              <a
+                class="social__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img src="images/icons/facebook.svg" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="https://instagram.com/vasilnastishin/"
+                target="_blank"
+              >
+                <img src="images/icons/instagram.svg" alt="" />
+              </a>
+              <a
+                class="social__link"
+                href="https://telegram.me/"
+                target="_blank"
+              >
+                <img src="images/icons/telegram.svg" alt="" />
+              </a>
+            </div>
+
+            <a class="btn" href="tel:+380979482684">Подзвонити</a>
+            <a
+              class="btn"
+              href="https://instagram.com/vasilnastishin?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              >Дивитись портфоліо
+            </a>
+          </div>
+
+          <img class="intro__photo" src="images/photo.png" alt="" />
+        </div>
+        <!--intro__inner-->
+      </div>
+      <!--container-->
+    </section>
+
+    <!-- Works -->
+
+    <div class="works" id="works">
+      <div class="container">
+        <div class="works__nav">
+          <a class="works__nav-link" href="#" data-filter="all">Все</a>
+          <a class="works__nav-link" href="#" data-filter="app">Кухня</a>
+          <a class="works__nav-link" href="#" data-filter="website">Сходи</a>
+          <a class="works__nav-link" href="#" data-filter="interaction"
+            >Каміни
+          </a>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+          <div class="portfolio__col" data-cat="app">
+            <div class="work" data-modal="#modal_project_1">
+              <img class="work__image" src="images/project.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: кухня</div>
+                <div class="work__title">
+                  Мармурова Кухня
+                  <time class="work__date" datetime="2022-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="website">
+            <div class="work" data-modal="#modal_project_2">
+              <img class="work__image" src="images/steps.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: сходи</div>
+                <div class="work__title">
+                  Мармурові Сходи
+                  <time class="work__date" datetime="2021-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="interaction">
+            <div class="work" data-modal="#modal_project_5">
+              <img class="work__image" src="images/fire.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: Каміни</div>
+                <div class="work__title">
+                  Затишний Камін
+                  <time class="work__date" datetime="2021-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="website">
+            <div class="work" data-modal="#modal_project_3">
+              <img class="work__image" src="images/steps2.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: сходи</div>
+                <div class="work__title">
+                  Гранітні Сходи
+                  <time class="work__date" datetime="2021-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="interaction">
+            <div class="work" data-modal="#modal_project_6">
+              <img class="work__image" src="images/fire2.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: Каміни</div>
+                <div class="work__title">
+                  Затишний Камін
+                  <time class="work__date" datetime="2021-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="app">
+            <div class="work" data-modal="#modal_project_4">
+              <img class="work__image" src="images/project3.jpg" alt="" />
+              <div class="work__content">
+                <div class="work__cat">Категорія: кухня</div>
+                <div class="work__title">
+                  Мармурова Кухня
+                  <time class="work__date" datetime="2022-08-11 18:00"
+                    >2022</time
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--portfolio-->
+
+        <div class="text-center">
+          <a
+            class="btn btn--sm"
+            href="https://instagram.com/vasilnastishin?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            >Більше робіт</a
+          >
+        </div>
+      </div>
+      <!--container-->
+    </div>
+    <!--works-->
+
+    <!-- about -->
+    <section class="about" id="aboutme">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__photo">
+            <img
+              class="img"
+              src="images/designer_photo.png"
+              alt="designer_photo"
+            />
+          </div>
+          <div class="about__content">
+            <h3 class="about__title">ПРО МЕНЕ</h3>
+            <h2 class="about__bigtitle">хто я</h2>
+            <div class="about__text">
+              <p>
+                Пропоную своїм клієнтам мармур лише високої якості! Я працюю
+                лише з найкращими виробниками. І використовую витратні
+                матеріали, які є представниками найвищої якості класу "Люкс".
+              </p>
+              <p>
+                Моїми постачальниками є провідні компанії з Іспанії та Італії. Я
+                готовий разом з вами створити унікальний інтер'єр та із
+                задоволенням втілити усі ваші ідеї.
+              </p>
+              <p>
+                Мій секрет у тому, що хвилюватися за мою роботу вам не потрібно,
+                адже мої вироби з мармуру та граніту виглядатимуть так само
+                ефектно, як і в день покупки. Я знаходжу індивідуальний підхід
+                до кожного клієнта і готовий максимально втілити ваші бажання та
+                мрії. Від початку замовлення і до кінця установки виробів, Ви
+                можете супроводжувати мене і проконтролювати якість моєї роботи
+              </p>
+            </div>
+
+            <a class="btn" href="tel:+380979482684">Подзвонити</a>
+            <a
+              class="btn"
+              href="https://instagram.com/vasilnastishin?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              >Дивитись портфоліо
+            </a>
+          </div>
+          <!--about__content-->
+        </div>
+        <!--about__inner-->
+      </div>
+      <!--container-->
+    </section>
+
+    <!-- reviews -->
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__item">
+          <div class="reviews__text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Excepturi rem numquam quaerat laborum architecto nobis reiciendis
+              repellat quae. Sed error sit ipsam illo ducimus repellat id
+              perferendis aliquid? Recusandae, expedita?
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Excepturi rem numquam quaerat laborum architecto nobis reiciendis
+              repellat quae. Sed error sit ipsam illo ducimus repellat id
+              perferendis aliquid? Recusandae, expedita?
+            </p>
+          </div>
+
+          <div class="reviews__author">
+            <img class="reviews__photo" src="images/lewis.jpg" alt="" />
+            <div class="reviews__name">Edward M. Brooks</div>
+            <div class="reviews__company">Marketing House</div>
+            <div class="reviews__rating">
+              <img
+                class="reviews__star"
+                src="images/icons/star.svg"
+                width="13"
+                height="13"
+                alt="star"
+              />
+              <img
+                class="reviews__star"
+                src="images/icons/star.svg"
+                width="13"
+                height="13"
+                alt="star"
+              />
+              <img
+                class="reviews__star"
+                src="images/icons/star.svg"
+                width="13"
+                height="13"
+                alt="star"
+              />
+              <img
+                class="reviews__star"
+                src="images/icons/star.svg"
+                width="13"
+                height="13"
+                alt="star"
+              />
+              <img
+                class="reviews__star reviews__star--unactive"
+                src="images/icons/star.svg"
+                width="13"
+                height="13"
+                alt="star"
+              />
+            </div>
+          </div>
+        </div>
+        <!--reviews__item-->
+      </div>
+      <!--container-->
+    </div>
+    <!--reviews-->
+
+    <!-- News -->
+
+    <section class="news" id="news">
+      <div class="container">
+        <div class="news__header">
+          <h3 class="news__title">Слідкуй за мною</h3>
+        </div>
+
+        <div class="articles">
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">
+                  12 <br />
+                  червня
+                </time>
+                <a href="https://www.instagram.com/vasilnastishin/">
+                  <img
+                    class="articles__photo"
+                    src="images/blog1.jpg"
+                    alt="work"
+                  />
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">
+                  13 <br />
+                  червня
+                </time>
+                <a href="https://www.instagram.com/vasilnastishin/">
+                  <img
+                    class="articles__photo"
+                    src="images/blog2.jpg"
+                    alt="work"
+                  />
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">
+                  14 <br />
+                  червня
+                </time>
+                <a href="https://www.instagram.com/vasilnastishin/">
+                  <img
+                    class="articles__photo"
+                    src="images/blog3.jpg"
+                    alt="work"
+                  />
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!--articles-->
+
+
+      </div>
+      <!--container-->
+    </section>
+    <!--news-->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">
+              &copy; 2022 Всі права захищені
+            </div>
+
+            <div class="footer__social">
+
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img
+                  src="images/icons/facebook.svg"
+                  alt="facebook"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/vasilnastishin/"
+                target="_blank"
+              >
+                <img
+                  src="images/icons/instagram.svg"
+                  alt="instagram"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a href="https://telegram.me/" target="_blank">
+                <img
+                  src="images/icons/telegram.svg"
+                  alt="telegram"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+            <!--footer__social-->
+          </div>
+          <!--footer__credits-->
+
+          <nav class="footer__nav">
+            <a href="#works" class="footer__nav-link">РОБОТИ</a>
+            <a href="#aboutme" class="footer__nav-link">ПРО МЕНЕ</a>
+            <a href="#news" class="footer__nav-link">БЛОГ</a>
+            <a href="#intro" class="footer__nav-link">КОНТАКТИ</a>
+            <a
+              href="tel:tel:+380979482684"
+              class="footer__nav-link footer__nav-link--btn"
+
+              >ПОДЗВОНИТИ</a
+            >
+          </nav>
+        </div>
+        <!--footer__inner-->
+      </div>
+      <!--container-->
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/project.jpg"
+                  alt="project"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/project2.jpg"
+                  alt="project"
+                />
+              </div>
+            </div>
+          </div>
+          <!--modal-work__preview-->
+          <div class="modal-work__content">
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img src="images/icons/left-arrow.svg" height="11" alt="left" />
+                Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next
+                <img src="images/icons/next.svg" height="11" alt="next" />
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content-->
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+    <div class="modal" id="modal_project_2">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/steps.jpg"
+                  alt="project"
+                />
+              </div>
+            </div>
+          </div>
+          <!--modal-work__preview-->
+
+          <!--modal-work__content-->
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+
+    <div class="modal" id="modal_project_3">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/steps2.jpg"
+                  alt="project"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/steps3.jpg"
+                  alt="project"
+                />
+              </div>
+            </div>
+          </div>
+          <!--modal-work__preview-->
+          <div class="modal-work__content">
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img src="images/icons/left-arrow.svg" height="11" alt="left" />
+                Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next
+                <img src="images/icons/next.svg" height="11" alt="next" />
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content-->
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+    <!--modal-->
+    <div class="modal" id="modal_project_4">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/project3.jpg"
+                  alt="project"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/project4.jpg"
+                  alt="project"
+                />
+              </div>
+            </div>
+          </div>
+          <!--modal-work__preview-->
+          <div class="modal-work__content">
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img src="images/icons/left-arrow.svg" height="11" alt="left" />
+                Previous
+              </button>
+              <button class="modal-work__btn slickNext" type="button">
+                Next
+                <img src="images/icons/next.svg" height="11" alt="next" />
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content-->
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+    <!--modal-->
+    <div class="modal" id="modal_project_5">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/fire.jpg"
+                  alt="project"
+                />
+              </div>
+
+            </div>
+          </div>
+          <!--modal-work__preview-->
+
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+    <!--modal-->
+    <div class="modal" id="modal_project_6">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="images/fire2.jpg"
+                  alt="project"
+                />
+              </div>
+
+            </div>
+          </div>
+          <!--modal-work__preview-->
+
+        </div>
+        <!--modal-work-->
+      </div>
+      <!--modal__dialog-->
+    </div>
+    <!--modal-->
+
+
+
+
+
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
